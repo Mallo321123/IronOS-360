@@ -123,7 +123,7 @@ docker-shell: docker-check  $(DOCKER_DEPS)
 
 # former build.sh
 docker-build: docker-check  $(DOCKER_DEPS)
-	$(DOCKER_CMD)  make  model=Pinecilv2 firmware-DE
+	$(DOCKER_CMD)  make build-all
 
 # delete docker image
 docker-clean-image:

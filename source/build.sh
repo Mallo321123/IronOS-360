@@ -4,7 +4,7 @@ TRANSLATION_DIR="../Translations"
 #TRANSLATION_SCRIPT="make_translation.py"
 
 # AVAILABLE_LANGUAGES will be calculating according to json files in $TRANSLATION_DIR
-AVAILABLE_LANGUAGES=()
+AVAILABLE_LANGUAGES=("DE" "EN" "ES" "FR" "IT" "NL" "PL" "PT" "RU" "TR" "ZH")
 BUILD_LANGUAGES=()
 AVAILABLE_MODELS=("TS100" "TS80" "TS80P" "Pinecil" "MHP30" "Pinecilv2" "S60" "S60P" "T55" "TS101")
 BUILD_MODELS=()

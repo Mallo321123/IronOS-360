@@ -17,20 +17,20 @@
  */
 
 #define SLEEP_TEMP         150 // Default sleep temperature
-#define BOOST_TEMP         420 // Default boost temp.
-#define BOOST_MODE_ENABLED 1   // 0: Disable 1: Enable
+#define BOOST_TEMP         360 // Default boost temp.
+#define BOOST_MODE_ENABLED 0   // 0: Disable 1: Enable
 
 /**
  * Blink the temperature on the cooling screen when its > 50C
  */
-#define COOLING_TEMP_BLINK 0 // 0: Disable 1: Enable
+#define COOLING_TEMP_BLINK 1 // 0: Disable 1: Enable
 
 /**
  * How many seconds/minutes we wait until going to sleep/shutdown.
  * Values -> SLEEP_TIME * 10; i.e. 5*10 = 50 Seconds!
  */
-#define SLEEP_TIME    5  // x10 Seconds
-#define SHUTDOWN_TIME 10 // Minutes
+#define SLEEP_TIME    6  // x10 Seconds
+#define SHUTDOWN_TIME 20 // Minutes
 
 /**
  * Auto start off for safety.
@@ -40,7 +40,7 @@
  *  2 - Sleep Temperature
  *  3 - Sleep Off Temperature
  */
-#define AUTO_START_MODE 0 // Default to none
+#define AUTO_START_MODE 1 // Default to none
 
 /**
  * Locking Mode
@@ -139,8 +139,8 @@
 #define TEMP_uV_LOOKUP_HAKKO                                 // Use Hakko lookup table
 #define USB_PD_VMAX                28                        // Maximum voltage for PD to negotiate
 #define PID_TIM_HZ                 (10)                      // Tick rate of the PID loop
-#define MAX_TEMP_C                 450                       // Max soldering temp selectable °C
-#define MAX_TEMP_F                 850                       // Max soldering temp selectable °F
+#define MAX_TEMP_C                 360                       // Max soldering temp selectable °C
+#define MAX_TEMP_F                 680                       // Max soldering temp selectable °F
 #define MIN_TEMP_C                 10                        // Min soldering temp selectable °C
 #define MIN_TEMP_F                 50                        // Min soldering temp selectable °F
 #define MIN_BOOST_TEMP_C           250                       // The min settable temp for boost mode °C
