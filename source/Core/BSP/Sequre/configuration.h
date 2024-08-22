@@ -255,10 +255,10 @@
 #define PID_TIM_HZ (8) // Tick rate of the PID loop
 #endif
 #ifndef MAX_TEMP_C
-#define MAX_TEMP_C 450 // Max soldering temp selectable °C
+#define MAX_TEMP_C 360 // Max soldering temp selectable °C
 #endif
 #ifndef MAX_TEMP_F
-#define MAX_TEMP_F 850 // Max soldering temp selectable °F
+#define MAX_TEMP_F 680 // Max soldering temp selectable °F
 #endif
 #ifndef MIN_TEMP_C
 #define MIN_TEMP_C 10 // Min soldering temp selectable °C
