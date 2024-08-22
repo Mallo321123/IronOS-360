@@ -13,7 +13,7 @@ endif
 
 # detect availability of docker
 ifndef DOCKER_BIN
-DOCKER_COMPOSE:=$(shell command -v docker-compose 2>/dev/null)
+#DOCKER_COMPOSE:=$(shell command -v docker compose 2>/dev/null)
 DOCKER_TOOL:=$(shell command -v docker 2>/dev/null)
 ifdef DOCKER_COMPOSE
 DOCKER_BIN:=$(DOCKER_COMPOSE)
@@ -123,7 +123,7 @@ docker-shell: docker-check  $(DOCKER_DEPS)
 
 # former build.sh
 docker-build: docker-check  $(DOCKER_DEPS)
-	$(DOCKER_CMD)  make  build-all
+	$(DOCKER_CMD)  make  model=Pinecilv2 firmware-DE
 
 # delete docker image
 docker-clean-image:
