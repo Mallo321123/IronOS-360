@@ -18,7 +18,7 @@
 
 #define SLEEP_TEMP         150 // Default sleep temperature
 #define BOOST_TEMP         360 // Default boost temp.
-#define BOOST_MODE_ENABLED 0   // 0: Disable 1: Enable
+#define BOOST_MODE_ENABLED 1   // 0: Disable 1: Enable
 
 /**
  * Blink the temperature on the cooling screen when its > 50C
@@ -40,7 +40,7 @@
  *  2 - Sleep Temperature
  *  3 - Sleep Off Temperature
  */
-#define AUTO_START_MODE 1 // Default to none
+#define AUTO_START_MODE 2 // Default to none
 
 /**
  * Locking Mode
@@ -127,7 +127,7 @@
 #ifdef MODEL_Pinecilv2
 #define ADC_VDD_MV                 3200                      // ADC max reading millivolts
 #define ADC_MAX_READING            ((1 << 16) >> 1)          // Maximum reading of the adc
-#define SOLDERING_TEMP             320                       // Default soldering temp is 320.0 °C
+#define SOLDERING_TEMP             350                       // Default soldering temp is 320.0 °C
 #define VOLTAGE_DIV                630                       // 600 - Default divider from schematic
 #define CALIBRATION_OFFSET         900                       // 900 - Default adc offset in uV
 #define MIN_CALIBRATION_OFFSET     100                       // Min value for calibration
