@@ -17,7 +17,7 @@
  */
 
 #define SLEEP_TEMP         150 // Default sleep temperature
-#define BOOST_TEMP         420 // Default boost temp.
+#define BOOST_TEMP         360 // Default boost temp.
 #define BOOST_MODE_ENABLED 1   // 0: Disable 1: Enable
 
 /**
@@ -49,7 +49,7 @@
  *  2 - Sleep Temperature
  *  3 - Sleep Off Temperature
  */
-#define AUTO_START_MODE 0 // Default to none
+#define AUTO_START_MODE 2 // Default to none
 
 /**
  * Locking Mode
