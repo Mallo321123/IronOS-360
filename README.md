@@ -1,3 +1,15 @@
+# Firmware Limited to 360°C, for Tip protection
+## Building
+Requirements: Docker, Docker-compose
+
+1. Download Code
+2. Navigate to Folder
+3. "make docker-shell"
+4. ./source/build.sh -l DE -m Pinecilv2
+5. upload the image located in source/Hexfile/Pinecilv2_DE.bin
+
+
+
 [![CI Build](https://github.com/Ralim/IronOS/actions/workflows/push.yml/badge.svg)](https://github.com/Ralim/IronOS/actions/workflows/push.yml)
 [![Total Downloads](https://img.shields.io/github/downloads/ralim/IronOS/total)](https://github.com/Ralim/IronOS)
 [![Contributors](https://img.shields.io/github/contributors-anon/ralim/ironos?color=blue&style=flat)](https://github.com/Ralim/IronOS/graphs/contributors)
