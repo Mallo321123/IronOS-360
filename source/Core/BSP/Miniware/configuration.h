@@ -1,6 +1,5 @@
 #ifndef CONFIGURATION_H_
 #define CONFIGURATION_H_
-#include "Settings.h"
 #include <stdint.h>
 /**
  * Configuration.h
@@ -64,8 +63,13 @@
  * OLED Brightness
  *
  */
-#define MIN_BRIGHTNESS     0   // Min OLED brightness selectable
-#define MAX_BRIGHTNESS     100 // Max OLED brightness selectable
+#if defined(MODEL_TS101)
+  #define MIN_BRIGHTNESS     1   // Min OLED brightness selectable
+  #define MAX_BRIGHTNESS     101 // Max OLED brightness selectable
+#else
+  #define MIN_BRIGHTNESS     0   // Min OLED brightness selectable
+  #define MAX_BRIGHTNESS     100 // Max OLED brightness selectable
+#endif
 #define BRIGHTNESS_STEP    25  // OLED brightness increment
 #define DEFAULT_BRIGHTNESS 25  // default OLED brightness
 
@@ -105,7 +109,7 @@
 #define DETAILED_IDLE      0 // 0: Disable 1: Enable - Default 0
 
 #define THERMAL_RUNAWAY_TIME_SEC 20
-#define THERMAL_RUNAWAY_TEMP_C   10
+#define THERMAL_RUNAWAY_TEMP_C   3
 
 #define CUT_OUT_SETTING          0  // default to no cut-off voltage
 #define RECOM_VOL_CELL           33 // Minimum voltage per cell (Recommended 3.3V (33))
@@ -181,6 +185,7 @@
 #define I2C_SOFT_BUS_1 1
 #define OLED_I2CBB1    1
 #define ACCEL_I2CBB1   1
+#define TIPTYPE_T12    1 // Can manually pick a T12 tip
 
 #define TEMP_TMP36
 #endif /* TS100 */
@@ -213,6 +218,9 @@
 #define TEMP_NTC             1
 #define ACCEL_I2CBB1         1
 #define POW_EPR              1
+#define TIP_TYPE_SUPPORT     1 // Support for tips of different types, i.e. resistance
+#define AUTO_TIP_SELECTION   1 // Can auto-select the tip
+#define TIPTYPE_T12          1 // Can manually pick a T12 tip
 #define HAS_POWER_DEBUG_MENU
 #define DEBUG_POWER_MENU_BUTTON_B
 
@@ -230,6 +238,8 @@
 #define I2C_SOFT_BUS_2   1
 #define LIS_ORI_FLIP
 #define OLED_FLIP
+#define TIPTYPE_TS80 1 // Only one tip type so far
+
 #endif /* TS80(P) */
 
 #ifdef MODEL_TS80

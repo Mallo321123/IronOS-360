@@ -1,6 +1,5 @@
 #ifndef CONFIGURATION_H_
 #define CONFIGURATION_H_
-#include "Settings.h"
 #include <stdint.h>
 /**
  * Configuration.h
@@ -104,8 +103,8 @@
 #define DETAILED_IDLE      0 // 0: Disable 1: Enable - Default 0
 
 // Due to large thermal mass of the PCB being heated we need to pull this back a bit
-#define THERMAL_RUNAWAY_TIME_SEC 45
-#define THERMAL_RUNAWAY_TEMP_C   3
+#define THERMAL_RUNAWAY_TIME_SEC 20
+#define THERMAL_RUNAWAY_TEMP_C   2
 
 #define CUT_OUT_SETTING          0  // default to no cut-off voltage
 #define RECOM_VOL_CELL           33 // Minimum voltage per cell (Recommended 3.3V (33))
@@ -147,7 +146,7 @@
 #define MIN_BOOST_TEMP_F       300                     // The min settable temp for boost mode °F
 #define NO_DISPLAY_ROTATE                              // Disable OLED rotation by accel
 #define SLEW_LIMIT             50                      // Limit to 3.0 Watts per 64ms pid loop update rate slew rate
-
+#define TIPTYPE_MHP30          1                       // It's own special tip
 #define ACCEL_SC7
 #define ACCEL_MSA
 

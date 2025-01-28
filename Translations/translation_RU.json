@@ -114,6 +114,24 @@
     },
     "USBPDModeSafe": {
       "displayText": "Вкл.без\nзапроса"
+    },
+    "TipTypeAuto": {
+      "displayText": "Авто\nопред-е"
+    },
+    "TipTypeT12Long": {
+      "displayText": "TS100\nстанд."
+    },
+    "TipTypeT12Short": {
+      "displayText": "Pine\nкоротк."
+    },
+    "TipTypeT12PTS": {
+      "displayText": "PTS\n200"
+    },
+    "TipTypeTS80": {
+      "displayText": "TS80(P)\n"
+    },
+    "TipTypeJBCC210": {
+      "displayText": "JBC\nC210"
     }
   },
   "menuOptions": {
@@ -233,7 +251,9 @@
       "displayText": "Датчик\nХолла",
       "description": "Чувствительность датчика Холла к магнитному полю (1=мин. | ... | 9=макс.)"
     },
-    "HallEffSleepTimeout": {                                            "displayText": "HallSensor\nSleepTime",                           "description": "Interval before \"sleep mode\" starts when hall effect is above threshold"
+    "HallEffSleepTimeout": {
+      "displayText": "Интервал\nдатчика Холла",
+      "description": "Время между превышением датчиком Холла порогового значения и режимом сна"
     },
     "TemperatureUnit": {
       "displayText": "Единицы\nизмерения",
@@ -318,6 +338,10 @@
     "LanguageSwitch": {
       "displayText": "Язык:\n RU     Русский",
       "description": ""
+    },
+    "SolderingTipType": {
+      "displayText": "Тип\nжала",
+      "description": "Выбор типа установленного жала"
     }
   }
 }

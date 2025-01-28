@@ -114,6 +114,24 @@
     },
     "USBPDModeSafe": {
       "displayText": "Modalità\nsicura"
+    },
+    "TipTypeAuto": {
+      "displayText": "Rilevaz.\nauto"
+    },
+    "TipTypeT12Long": {
+      "displayText": "TS100\nlunga"
+    },
+    "TipTypeT12Short": {
+      "displayText": "Pine\ncorta"
+    },
+    "TipTypeT12PTS": {
+      "displayText": "PTS\n200"
+    },
+    "TipTypeTS80": {
+      "displayText": "TS80\n"
+    },
+    "TipTypeJBCC210": {
+      "displayText": "JBC\nC210"
     }
   },
   "menuOptions": {
@@ -131,14 +149,14 @@
     },
     "PDNegTimeout": {
       "displayText": "Abilitazione\nUSB PD",
-      "description": "Regola il massimo tempo utile per la negoziazione del protocollo USB Power Delivery con alimentatori compatibili [0: disattiva; multipli di 100 ms]"
+      "description": "Imposta il tempo di negoziazione del protocollo USB Power Delivery con alimentatori compatibili [0: disattiva; multipli di 100 ms]"
     },
     "USBPDMode": {
-      "displayText": "PD\nMode",
+      "displayText": "Modalità\nUSB PD",
       "description": "Abilita le modalità Power Delivery PPS ed EPR"
     },
     "BoostTemperature": {
-      "displayText": "Temp\nTurbo",
+      "displayText": "Temp\nturbo",
       "description": "Imposta la temperatura della funzione turbo [°C/°F]"
     },
     "AutoStart": {
@@ -159,7 +177,7 @@
     },
     "ProfilePhases": {
       "displayText": "Fasi modalità\nprofilo",
-      "description": "Imposta il numero di fasi da attuare per un profilo di riscaldamento personalizzato"
+      "description": "Imposta il numero di fasi da implementare per un profilo di riscaldamento personalizzato"
     },
     "ProfilePreheatTemp": {
       "displayText": "Temperatura\npreriscaldamento",
@@ -223,17 +241,19 @@
     },
     "SleepTimeout": {
       "displayText": "Timer\nriposo",
-      "description": "Imposta il timer per entrare in modalità riposo [secondi/minuti]"
+      "description": "Imposta un timer per entrare in modalità riposo [secondi/minuti]"
     },
     "ShutdownTimeout": {
       "displayText": "Timer\nspegnimento",
-      "description": "Imposta il timer per lo spegnimento [minuti]"
+      "description": "Imposta un timer per lo spegnimento [minuti]"
     },
     "HallEffSensitivity": {
       "displayText": "Sensore\nHall",
       "description": "Regola la sensibilità del sensore ad effetto Hall per entrare in modalità riposo [1: minima; 9: massima]"
     },
-    "HallEffSleepTimeout": {                                            "displayText": "HallSensor\nSleepTime",                           "description": "Interval before \"sleep mode\" starts when hall effect is above threshold"
+    "HallEffSleepTimeout": {
+      "displayText": "Timer\nHall",
+      "description": "Imposta un timer per entrare in modalità riposo quando il sensore ad effetto Hall è al di sopra della soglia di attivazione [secondi]"
     },
     "TemperatureUnit": {
       "displayText": "Unità di\ntemperatura",
@@ -318,6 +338,10 @@
     "LanguageSwitch": {
       "displayText": "Lingua:\n IT    Italiano",
       "description": ""
+    },
+    "SolderingTipType": {
+      "displayText": "Tipo di\npunta",
+      "description": "Seleziona il modello della punta in uso"
     }
   }
 }
