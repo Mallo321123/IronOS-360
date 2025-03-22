@@ -361,6 +361,12 @@ ifdef swd_enable
 GLOBAL_DEFINES+=-DSWD_ENABLE
 endif
 
+ifeq ($(model),$(filter $(model),$(ALL_PINECIL_V2_MODELS)))
+ifdef ws2812b_enable
+	GLOBAL_DEFINES += -DWS2812B_ENABLE
+endif
+endif
+
 # Libs -------------------------------------------------------------------------
 LIBS=
 
@@ -425,6 +431,7 @@ CHECKOPTIONS=-Wtrigraphs                  \
              -Wmissing-field-initializers \
              -Wshadow                     \
              -Wno-unused-parameter        \
+             -Wno-undef                   \
              -Wdouble-promotion
 
 CHECKOPTIONS_C=$(CHECKOPTIONS) -Wbad-function-cast
@@ -454,6 +461,7 @@ CFLAGS=$(DEV_CFLAGS)     \
      -D${COMPILER}       \
      -MMD                \
      -std=gnu11          \
+     -g3                 \
        $(OPTIM)          \
      -T$(LDSCRIPT)       \
      -c
