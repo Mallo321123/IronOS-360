@@ -46,7 +46,7 @@ DOCKER_FILE=$(CURDIR)/scripts/IronOS.Dockerfile
 DOCKER_DEPS=$(DOCKER_YML) $(DOCKER_FILE)
 
 # compose docker-compose command
-DOCKER_CMD=$(DOCKER_BIN)  -f $(DOCKER_YML)  run  --rm  builder
+DOCKER_CMD=$(DOCKER_BIN) -f $(DOCKER_YML)  run  --rm  builder
 
 # MkDocs config
 MKDOCS_YML=$(CURDIR)/scripts/IronOS-mkdocs.yml
@@ -199,7 +199,7 @@ build-all:
 # target to build multilang supported builds for Pinecil & PinecilV2
 build-multilang:
 	@for modelml in $(MODELS_ML); do \
-		$(MAKE)  -C source/  -j2  model=$${modelml}  firmware-multi_compressed_European  firmware-multi_compressed_Belorussian+Bulgarian+Russian+Serbian+Ukrainian  firmware-multi_Chinese+Japanese ; \
+		$(MAKE)  -C source/  -j2  model=$${modelml}  firmware-multi_compressed_European  firmware-multi_compressed_Belarusian+Bulgarian+Russian+Serbian+Ukrainian  firmware-multi_Chinese+Japanese ; \
 		mkdir  -p  $(OUT_DIR)/$${modelml}_multi-lang ; \
 		cp  $(OUT_HEX)/$${modelml}_multi_*.bin   $(OUT_DIR)/$${modelml}_multi-lang ; \
 		cp  $(OUT_HEX)/$${modelml}_multi_*.hex   $(OUT_DIR)/$${modelml}_multi-lang ; \
