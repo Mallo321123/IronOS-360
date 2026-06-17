@@ -8,10 +8,10 @@ OperatingMode showWarnings(const ButtonState buttons, guiContext *cxt) {
   switch (cxt->scratch_state.state1) {
   case 0: // Settings reset warning
     if (settingsWereReset) {
-      if (warnUser(translatedString(Tr->SettingsResetMessage), buttons)) {
+      //if (warnUser(translatedString(Tr->SettingsResetMessage), buttons)) {
         settingsWereReset         = false;
         cxt->scratch_state.state1 = 1;
-      }
+      //}
     } else {
       cxt->scratch_state.state1 = 1;
     }
