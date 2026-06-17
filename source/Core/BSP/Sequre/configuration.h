@@ -17,7 +17,7 @@
 
 #define SLEEP_TEMP         150 // Default sleep temperature
 #define BOOST_TEMP         360 // Default boost temp.
-#define BOOST_MODE_ENABLED 1   // 0: Disable 1: Enable
+#define BOOST_MODE_ENABLED 0   // 0: Disable 1: Enable
 
 /**
  * OLED Brightness
@@ -209,8 +209,8 @@
 #define NO_DISPLAY_ROTATE     // Disable OLED rotation by accel
 #define MAX_TEMP_C        350 // Max soldering temp selectable °C
 #define MAX_TEMP_F        660 // Max soldering temp selectable °F
-#define MIN_TEMP_C        10  // Min soldering temp selectable °C
-#define MIN_TEMP_F        50  // Min soldering temp selectable °F
+#define MIN_TEMP_C        340  // Min soldering temp selectable °C
+#define MIN_TEMP_F        644  // Min soldering temp selectable °F
 #define MIN_BOOST_TEMP_C  150 // The min settable temp for boost mode °C
 #define MIN_BOOST_TEMP_F  300 // The min settable temp for boost mode °F
 #define NO_SLEEP_MODE
@@ -248,7 +248,7 @@
 #define MIN_CALIBRATION_OFFSET 100 // Min value for calibration
 #endif
 #ifndef SOLDERING_TEMP
-#define SOLDERING_TEMP 320 // Default soldering temp is 320.0 °C
+#define SOLDERING_TEMP 360 // Default soldering temp is 360.0 °C
 #endif
 #ifndef PID_TIM_HZ
 #define PID_TIM_HZ (8) // Tick rate of the PID loop
@@ -260,10 +260,10 @@
 #define MAX_TEMP_F 680 // Max soldering temp selectable °F
 #endif
 #ifndef MIN_TEMP_C
-#define MIN_TEMP_C 10 // Min soldering temp selectable °C
+#define MIN_TEMP_C 340 // Min soldering temp selectable °C
 #endif
 #ifndef MIN_TEMP_F
-#define MIN_TEMP_F 60 // Min soldering temp selectable °F
+#define MIN_TEMP_F 644 // Min soldering temp selectable °F
 #endif
 #ifndef MIN_BOOST_TEMP_C
 #define MIN_BOOST_TEMP_C 250 // The min settable temp for boost mode °C

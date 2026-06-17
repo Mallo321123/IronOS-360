@@ -16,8 +16,8 @@
  */
 
 #define SLEEP_TEMP         150 // Default sleep temperature
-#define BOOST_TEMP         420 // Default boost temp.
-#define BOOST_MODE_ENABLED 1   // 0: Disable 1: Enable
+#define BOOST_TEMP         360 // Default boost temp.
+#define BOOST_MODE_ENABLED 0   // 0: Disable 1: Enable
 
 /**
  * Blink the temperature on the cooling screen when its > 50C
@@ -39,7 +39,7 @@
  *  2 - Sleep Temperature
  *  3 - Sleep Off Temperature
  */
-#define AUTO_START_MODE 0 // Default to none
+#define AUTO_START_MODE 1 // Default to none
 
 /**
  * Locking Mode
@@ -126,7 +126,7 @@
 #endif
 
 #ifdef MODEL_Pinecil
-#define SOLDERING_TEMP         320                       // Default soldering temp is 320.0 °C
+#define SOLDERING_TEMP         350                       // Default soldering temp is 320.0 °C
 #define VOLTAGE_DIV            467                       // 467 - Default divider from schematic
 #define CALIBRATION_OFFSET     900                       // 900 - Default adc offset in uV
 #define MIN_CALIBRATION_OFFSET 100                       // Min value for calibration
@@ -138,10 +138,10 @@
 #define TEMP_uV_LOOKUP_HAKKO                             // Use Hakko lookup table
 #define USB_PD_VMAX            20                        // Maximum voltage for PD to negotiate
 #define PID_TIM_HZ             (8)                       // Tick rate of the PID loop
-#define MAX_TEMP_C             450                       // Max soldering temp selectable °C
-#define MAX_TEMP_F             850                       // Max soldering temp selectable °F
-#define MIN_TEMP_C             10                        // Min soldering temp selectable °C
-#define MIN_TEMP_F             50                        // Min soldering temp selectable °F
+#define MAX_TEMP_C             360                       // Max soldering temp selectable °C
+#define MAX_TEMP_F             680                       // Max soldering temp selectable °F
+#define MIN_TEMP_C             340                       // Min soldering temp selectable °C
+#define MIN_TEMP_F             644                       // Min soldering temp selectable °F
 #define MIN_BOOST_TEMP_C       250                       // The min settable temp for boost mode °C
 #define MIN_BOOST_TEMP_F       480                       // The min settable temp for boost mode °F
 

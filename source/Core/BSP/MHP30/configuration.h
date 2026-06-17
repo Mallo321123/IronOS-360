@@ -39,7 +39,7 @@
  *  2 - Sleep Temperature
  *  3 - Sleep Off Temperature
  */
-#define AUTO_START_MODE 0 // Default to none
+#define AUTO_START_MODE 1 // Default to none
 
 /**
  * Locking Mode

@@ -17,7 +17,7 @@
 
 #define SLEEP_TEMP         150 // Default sleep temperature
 #define BOOST_TEMP         360 // Default boost temp.
-#define BOOST_MODE_ENABLED 1   // 0: Disable 1: Enable
+#define BOOST_MODE_ENABLED 0   // 0: Disable 1: Enable
 
 /**
  * Blink the temperature on the cooling screen when its > 50C
@@ -39,7 +39,7 @@
  *  2 - Sleep Temperature
  *  3 - Sleep Off Temperature
  */
-#define AUTO_START_MODE 2 // Default to none
+#define AUTO_START_MODE 1 // Default to none
 
 /**
  * Locking Mode
@@ -140,8 +140,8 @@
 #define PID_TIM_HZ                 (10)                      // Tick rate of the PID loop
 #define MAX_TEMP_C                 360                       // Max soldering temp selectable °C
 #define MAX_TEMP_F                 680                       // Max soldering temp selectable °F
-#define MIN_TEMP_C                 10                        // Min soldering temp selectable °C
-#define MIN_TEMP_F                 50                        // Min soldering temp selectable °F
+#define MIN_TEMP_C                 340                       // Min soldering temp selectable °C
+#define MIN_TEMP_F                 644                       // Min soldering temp selectable °F
 #define MIN_BOOST_TEMP_C           250                       // The min settable temp for boost mode °C
 #define MIN_BOOST_TEMP_F           480                       // The min settable temp for boost mode °F
 #define DEVICE_HAS_VALIDATION_CODE                           // We have 2 digit validations
